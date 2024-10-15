@@ -1,0 +1,38 @@
+Dataset Overview
+Shape: (541909, 8)
+Columns: ['InvoiceNo', 'StockCode', 'Description', 'Quantity', 'InvoiceDate', 'UnitPrice', 'CustomerID', 'Country']
+
+Column Types
+InvoiceNo              object
+StockCode              object
+Description            object
+Quantity                int64
+InvoiceDate    datetime64[ns]
+UnitPrice             float64
+CustomerID            float64
+Country                object
+
+Missing Values
+InvoiceNo           0
+StockCode           0
+Description      1454
+Quantity            0
+InvoiceDate         0
+UnitPrice           0
+CustomerID     135080
+Country             0
+
+Basic Statistics for Numerical Columns
+            Quantity                    InvoiceDate      UnitPrice     CustomerID
+count  541909.000000                         541909  541909.000000  406829.000000
+mean        9.552250  2011-07-04 13:34:57.156386048       4.611114   15287.690570
+min    -80995.000000            2010-12-01 08:26:00  -11062.060000   12346.000000
+25%         1.000000            2011-03-28 11:34:00       1.250000   13953.000000
+50%         3.000000            2011-07-19 17:17:00       2.080000   15152.000000
+75%        10.000000            2011-10-19 11:27:00       4.130000   16791.000000
+max     80995.000000            2011-12-09 12:50:00   38970.000000   18287.000000
+std       218.081158                            NaN      96.759853    1713.600303
+
+Context Detection Using Clustering:
+- Cluster 0 contains columns: ['InvoiceNo', 'StockCode', 'Description', 'Quantity', 'UnitPrice', 'CustomerID', 'Country']
+- Cluster 1 contains columns: ['InvoiceDate']
